@@ -37,6 +37,8 @@ echo '>>>>>>>>>>>> BINUTILS'
 #make install
 
 
+if [ $? -ne 0 ]; then { echo 'ERROR MAKING BINUTILS'; exit 1; } fi
+
 #GCC part
 echo '>>>>>>>>>>>>> GCC'
 
@@ -49,3 +51,5 @@ echo "PWD: $PWD"
 #make all-target-libgcc
 #make install-gcc
 #make install-target-libgcc
+
+if [ $? -ne 0 ]; then { echo 'ERROR MAKING GCC'; exit 1; } fi
