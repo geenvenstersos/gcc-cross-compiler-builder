@@ -12,7 +12,7 @@ sudo apt install -y libcloog-isl-dev
 mkdir -p ./sources ./build ./gcc-cc
 
 git clone git://sourceware.org/git/binutils-gdb.git ./sources/binutils-src 
-git clone https://github.com/gcc-mirror/gcc.git .sources/gcc-src
+git clone https://github.com/gcc-mirror/gcc.git ./sources/gcc-src
 
 #git clone https://github.com/geenvenstersos/barebones_tutorial ./sources/binutils-src
 #git clone https://github.com/geenvenstersos/barebones_tutorial ./sources/gcc-src
